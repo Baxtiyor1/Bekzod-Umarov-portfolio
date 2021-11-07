@@ -1,0 +1,109 @@
+.work{
+    &__wrapper{
+        padding: 60px 60px 70px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        background: #EEBF63;
+        border-radius: 25px;
+    }
+    &__title{
+        width: 347px;
+        max-width: 100%;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 57px;
+        color: #FFFFFF;
+    }
+    &__btnbox{
+        display: flex;
+    }
+    &__seeBtn{
+        margin-right: 17px;
+        padding: 17px 27px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+        border: 2px solid #FFF;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+    &__icon{
+        margin-right: 11px;
+        width: 26px;
+    }
+    &__mail{
+        padding: 17px 34px;
+        display: flex;
+        align-items: center;
+        border: 2px solid #FFF;
+        background-color: #fff;
+        box-shadow: 0px 0.927421px 1.92354px rgba(0, 0, 0, 0.00974257);
+        border-radius: 10px;
+        &--title{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            color: #2F2F2F;
+        }
+    }
+}
+
+// *****************
+// MEDIA
+// *****************
+@media screen and (max-width: 1040px) {
+    .work{
+        &__wrapper{
+            padding: 40px 40px 50px;
+        }
+        &__title{
+            width: 231px;
+            font-size: 40px;
+            line-height: normal;
+        }
+        &__btnbox{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__seeBtn{
+            margin-bottom: 15px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .work{
+        &__wrapper{
+            flex-direction: column;
+            align-items: center;
+            padding: 6vw;
+        }
+        &__title{
+            margin-bottom: 30px;
+            width: 100%;
+            font-size: 7.5vw;
+            text-align: center;
+            line-height: normal;
+        }
+        &__btnbox{
+            width: 100%;
+            align-items: center;
+        }
+        &__seeBtn{
+            margin: 0;
+            margin-bottom: 15px;
+            padding: 2.5vw;
+            font-size: 3vw;
+        }
+        &__mail{
+            padding: 2.5vw 5vw;
+            &--title{
+                font-size: 3vw;
+            }
+        }
+        &__icon{
+            width: 3.5vw;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.recent{
+    &__header{
+        margin:110px 0 66px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title{
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 62px;
+        color: #151517;
+    }
+    &__btn{
+        padding: 16px 32px;
+        background: #EEBF63;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        border: 2px solid #EEBF63;
+        cursor: pointer;
+        &:hover{
+            background-color: #fff;
+            color: #EEBF63;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .recent{
+        &__title{
+            font-size: 8vw;
+        }
+        &__btn{
+            padding: 2vw 4.5vw;
+            font-size: 3vw;
+            line-height: 3vw;
+        }
+    }
+}
+@media screen and (max-width: 560px) {
+    .recent{
+        &__btn{
+            padding: 0 5px;
+            font-size: 3vw;
+            line-height: 0;
+        }
+    }
+}

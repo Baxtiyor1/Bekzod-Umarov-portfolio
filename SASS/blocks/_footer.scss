@@ -1,0 +1,73 @@
+.footer{
+    &__project{
+        margin-top: 80px;
+        & .footer__imgbox{
+            width: 146px;
+        }
+    }
+    &__about{
+        background-color: #f1f1f1;
+    }
+    &__wrapper{
+        padding: 50px 0 53px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #2F2F2F;
+    }
+    &__imgbox{
+        width: 203px;
+        display: flex;
+        justify-content: space-between;
+        & img{
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__link{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #2F2F2F;
+    }
+    &__btn{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #2F2F2F;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        & img{
+            margin-left: 13px;
+        }
+    }
+}
+
+// ***************
+// MEDIA
+// ***************
+@media screen and (max-width: 600px) {
+    .footer{
+        &__wrapper{
+            padding: 20px;
+            flex-direction: column;
+        }
+        &__title{
+            margin-bottom: 15px;
+        }
+        &__imgbox{
+            margin-bottom: 15px;
+        }
+        
+    }
+}

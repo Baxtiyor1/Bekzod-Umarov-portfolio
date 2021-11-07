@@ -1,0 +1,112 @@
+.header{
+    &__project{
+        background-color:#F1F1F1;
+    }
+    &__about{
+        background-color:#F1F1F1;
+    }
+    &__nav{
+        padding: 33px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+    }
+    &__item{
+        margin-right: 40px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__logo{
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 33px;
+        color: #151517;
+    }
+    &__link{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #151517;
+        &--active{
+            font-weight: bold;
+            color: #EEBF63;
+        }
+    }
+    &__bar{
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        border: none;
+        & img{
+            width: 32px;
+            height: 32px;
+        }
+    }
+    &__bar{
+        display: none;
+    }
+    &__modal{
+        padding-top: 60px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        background-color: #000;
+        overflow: hidden;
+        transform: translateX(-100%);
+        transition: 0.5s;
+        &--close{
+            position: absolute;
+            top: 30px;
+            right: 40px;
+        }
+    }
+}
+
+// ***************
+//MEDIA
+//****************
+@media screen and (max-width: 560px) {
+    .header{
+        &__nav{
+            padding: 20px;
+        }
+        &__list{
+            flex-direction: column;
+            display: none;
+            &--modal{
+                display: flex;
+            }
+        }
+        &__item{
+            margin: 0;
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &__link{
+            color: #fff;
+            font-size: 24px;
+            &--active{
+                font-weight: bold;
+                color: #EEBF63;
+            }
+        }
+        &__modal{
+            &--active{
+                transform: translateX(0);
+            }
+        }
+        &__bar{
+            display: inline-block;
+        }
+    }
+}
