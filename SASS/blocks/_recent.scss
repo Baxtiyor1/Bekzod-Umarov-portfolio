@@ -1,4 +1,5 @@
 .recent{
+    overflow: hidden;
     &__header{
         margin:110px 0 66px;
         display: flex;
@@ -20,6 +21,7 @@
         color: #FFFFFF;
         border: 2px solid #EEBF63;
         cursor: pointer;
+        transition: 0.5s;
         &:hover{
             background-color: #fff;
             color: #EEBF63;

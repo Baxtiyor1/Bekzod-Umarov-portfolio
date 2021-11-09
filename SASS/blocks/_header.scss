@@ -32,9 +32,14 @@
         font-size: 16px;
         line-height: 24px;
         color: #151517;
+        transition: 0.5s;
+        border-bottom: 2px solid transparent;
         &--active{
             font-weight: bold;
             color: #EEBF63;
+        }
+        &:hover{
+            border-bottom: 2px solid #EEBF63;
         }
     }
     &__bar{

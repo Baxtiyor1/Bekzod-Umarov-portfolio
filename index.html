@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bekzod Umarov</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     
@@ -72,7 +74,7 @@
         
         <section class="content">
             <div class="container">
-                <div class="content__wrapper">
+                <div class="content__wrapper" data-aos="zoom-in" data-aos-offset="500" data-aos-duration="500">
                     <div class="content__imgbox">
                         <img src="./img/content-man-img.png" alt="man">
                     </div>
@@ -99,11 +101,11 @@
             <div class="container">
                 <div class="recent__wrapper">
                     <div class="recent__header">
-                        <h2 class="recent__title">Recent Projects</h2>
-                        <button class="recent__btn">View More</button>
+                        <h2 class="recent__title" data-aos="fade-right" data-aos-offset="300" data-aos-duration="500">Recent Projects</h2>
+                        <button class="recent__btn" data-aos="fade-left" data-aos-offset="300" data-aos-duration="500">View More</button>
                     </div>
                     <ul class="projects__menu">
-                        <li class="projects__item">
+                        <li class="projects__item" data-aos="zoom-in" data-aos-offset="500" data-aos-duration="500">
                             <img class="projects__img" src="./img/recent-img1.png" alt="insta-portfolio">
                             <h3 class="projects__subtitle">UI Portfolio</h3>
                             <div class="projects__span-wrapper">
@@ -117,7 +119,7 @@
                                 </span>
                             </div>
                         </li>
-                        <li class="projects__item">
+                        <li class="projects__item" data-aos="zoom-in" data-aos-offset="500" data-aos-duration="500">
                             <img class="projects__img" src="./img/recent-img2.png" alt="twit-portfolio">
                             <h3 class="projects__subtitle">UI Portfolio</h3>
                             <div class="projects__span-wrapper">
@@ -139,27 +141,27 @@
         <section class="me">
             <div class="container">
                 <div class="me__wrapper">
-                    <h2 class="me__title">Why Hire Me?</h2>
+                    <h2 class="me__title" data-aos="zoom-in" data-aos-offset="500" data-aos-duration="500">Why Hire Me?</h2>
                     <ul class="me__list">
-                        <li class="me__item">
+                        <li class="me__item" data-aos="zoom-in" data-aos-offset="500" data-aos-duration="500">
                             <div class="me__box">
                                 <img class="me__img" src="./img/copyrighter-img.png" alt="man">
                             </div>
                             <h3 class="me__text">Copyrighter</h3>
                         </li>
-                        <li class="me__item">
+                        <li class="me__item" data-aos="zoom-in" data-aos-offset="500" data-aos-duration="500">
                             <div class="me__box">
                                 <img class="me__img" src="./img/design-img.png" alt="man">
                             </div>
                             <h3 class="me__text">Design</h3>
                         </li>
-                        <li class="me__item">
+                        <li class="me__item" data-aos="zoom-in" data-aos-offset="500" data-aos-duration="500">
                             <div class="me__box">
                                 <img class="me__img" src="./img/cheaper-img.png" alt="man">
                             </div>
                             <h3 class="me__text">Cheaper</h3>
                         </li>
-                        <li class="me__item">
+                        <li class="me__item" data-aos="zoom-in" data-aos-offset="500" data-aos-duration="500">
                             <div class="me__box">
                                 <img class="me__img" src="./img/Deadline-img.png" alt="man">
                             </div>
@@ -172,7 +174,7 @@
         
         <section class="work">
             <div class="container">
-                <div class="work__wrapper">
+                <div class="work__wrapper" data-aos="zoom-in" data-aos-offset="500" data-aos-duration="500">
                     <h2 class="work__title">Interesting works with me?</h2>
                     <div class="work__btnbox">
                         <button class="work__seeBtn">See More Projects</button>
@@ -188,9 +190,9 @@
         <section class="client">
             <div class="container">
                 <div class="client__wrapper">
-                    <h2 class="client__title">We are loved by users and clients worldwide</h2>
+                    <h2 class="client__title" data-aos="zoom-in" data-aos-offset="500" data-aos-duration="500">We are loved by users and clients worldwide</h2>
                     <ul class="client__list">
-                        <li class="client__item">
+                        <li class="client__item" data-aos="fade-right" data-aos-offset="500" data-aos-duration="500">
                             <p class="client__text">One of the best additions to our feedback loop has been the company-wide adoption of Fellow...</p>
                             <div class="client__box">
                                 <img class="client__img" src="./img/ronald-img.png" alt="man-img" width="48" height="50">
@@ -202,7 +204,7 @@
                                 <img class="client__stars" src="./img/content-stars.png" alt="stars">
                             </div>
                         </li>
-                        <li class="client__item">
+                        <li class="client__item" data-aos="fade-left" data-aos-offset="500" data-aos-duration="500">
                             <p class="client__text">It provides an amazing platform for constant conversations and direct feedback between...</p>
                             <div class="client__box">
                                 <img class="client__img" src="./img/ronald-img2.png" alt="man-img" width="48" height="50">
@@ -243,6 +245,9 @@
     </footer>
     
     
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/script.js"></script>
 </body>
 </html>

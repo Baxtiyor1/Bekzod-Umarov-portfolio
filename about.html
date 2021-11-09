@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bekzod Umarov</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     
@@ -14,15 +16,15 @@
             <nav class="header__nav">
                 <p class="header__logo">Bekzod Umarov</p>
                 <ul class="header__list">
-                    <li class="header__item"><a class="header__link header__link--active" href="./index.html">Home</a></li>
-                    <li class="header__item"><a class="header__link" href="./about.html">About</a></li>
+                    <li class="header__item"><a class="header__link" href="./index.html">Home</a></li>
+                    <li class="header__item"><a class="header__link header__link--active" href="./about.html">About</a></li>
                     <li class="header__item"><a class="header__link" href="./project.html">Project</a></li>
                 </ul>
                 <div id="header__modal" class="header__modal">
                     <button id="header__modal--close"><img class="header__modal--close" src="./img/modal_close.svg" alt="colse_btn" width="30" height="30"></button>
                     <ul class="header__list header__list--modal">
-                        <li class="header__item"><a class="header__link header__link--active" href="./index.html">Home</a></li>
-                        <li class="header__item"><a class="header__link" href="./about.html">About</a></li>
+                        <li class="header__item"><a class="header__link" href="./index.html">Home</a></li>
+                        <li class="header__item"><a class="header__link header__link--active" href="./about.html">About</a></li>
                         <li class="header__item"><a class="header__link" href="./project.html">Project</a></li>
                     </ul>
                 </div>
@@ -77,9 +79,9 @@
             <div class="container">
                 <div class="context__wrapper">
                     <hr class="context__hr">
-                    <p class="context__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, volutpat nunc, euismod turpis. Sed adipiscing nisl, integer at facilisi. In diam integer lectus eget quam quis ut sagittis. Nibh tellus neque pellentesque posuere et volutpat nisi. Adipiscing massa dictum odio dignissim pellentesque odio tellus. Dignissim id nunc a, elementum cursus eget quis. Aliquam, tortor tortor quam <span class="context__text context__text--bold">curabitur</span> sociis eget ut. Vulputate lectus nec donec aliquam nunc blandit quis. Odio massa egestas tristique turpis ac porta ornare. </p>
-                    <img class="context__img" src="./img/relaxed-guy.png" alt="relaxed-guy">
-                    <p class="context__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, volutpat nunc, euismod turpis. Sed adipiscing nisl, integer at facilisi. In diam integer lectus eget quartion. <br> quam quis ut sagittis. Nibh tellus neque pellentesque posuere et volutpat nisi. Adipiscing massa dictum odio dignissim pellentesque odio tellus. Dignissim id nunc a, elementum cursus eget quis. Aliquam, tortor tortor quam curabitur sociis eget ut. Vulputate lectus nec donec aliquam nunc blandit quis. Odio massa egestas tristique turpis ac porta ornare. Am integer lectus eget quam quis ut sagittis. </p>
+                    <p class="context__text" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, volutpat nunc, euismod turpis. Sed adipiscing nisl, integer at facilisi. In diam integer lectus eget quam quis ut sagittis. Nibh tellus neque pellentesque posuere et volutpat nisi. Adipiscing massa dictum odio dignissim pellentesque odio tellus. Dignissim id nunc a, elementum cursus eget quis. Aliquam, tortor tortor quam <span class="context__text context__text--bold">curabitur</span> sociis eget ut. Vulputate lectus nec donec aliquam nunc blandit quis. Odio massa egestas tristique turpis ac porta ornare. </p>
+                    <img class="context__img" src="./img/relaxed-guy.png" alt="relaxed-guy" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="500">
+                    <p class="context__text" data-aos="zoom-in" data-aos-offset="400" data-aos-duration="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, volutpat nunc, euismod turpis. Sed adipiscing nisl, integer at facilisi. In diam integer lectus eget quartion. <br> quam quis ut sagittis. Nibh tellus neque pellentesque posuere et volutpat nisi. Adipiscing massa dictum odio dignissim pellentesque odio tellus. Dignissim id nunc a, elementum cursus eget quis. Aliquam, tortor tortor quam curabitur sociis eget ut. Vulputate lectus nec donec aliquam nunc blandit quis. Odio massa egestas tristique turpis ac porta ornare. Am integer lectus eget quam quis ut sagittis. </p>
                 </div>
             </div>
         </section>
@@ -104,6 +106,9 @@
         </div>
     </footer>
     
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/script.js"></script>
 </body>
 </html>
